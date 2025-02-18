@@ -1,13 +1,14 @@
 'use client'
 
 import { useState } from "react";
+import Link from "next/link";
 
 const BlogPost: React.FC<{ blogTitle: string; count: number }> = ({ blogTitle, count }) => {
-    return <a className="w-full h-full flex justify-center items-center bg-[#f5f5f5] p-[1rem]" href={`/blogpost/blogpost-${count}-${blogTitle}`}>{`blogpost ${count}`}</a>;
+    return <Link href={`/blogpost/blogpost-${count}-${blogTitle}`}><a className="w-full h-full flex justify-center items-center bg-[#f5f5f5] p-[1rem]">{`blogpost ${count}`}</a></Link>;
 };
 
 export default function BlogPostPage() {
-    const [count, setCount] = useState(0);
+    const [count] = useState(0);
 
     return (
         <ul className="flex flex-col gap-y-[1em]">

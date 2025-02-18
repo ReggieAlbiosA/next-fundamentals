@@ -1,4 +1,5 @@
-import type { Metadata, ResolvingMetadata } from 'next'
+import type { Metadata } from 'next'
+import Link from 'next/link'
  
 type Props = {
   params: Promise<{ id: string }>
@@ -6,8 +7,7 @@ type Props = {
 }
 
 export async function generateMetadata(
-  { params, searchParams }: Props,
-  parent: ResolvingMetadata
+  { params }: Props,
 ): Promise<Metadata> {
 
   const id = (await params).id
@@ -26,13 +26,12 @@ export default async function Page({
 
     return( 
       <div className="flex flex-col gap-y-[20px] items-start">
-        <a href="/blogpost" className="text-white bg-black rounded-md p-[7px_16px] font-bold">Back</a>
-
+        <Link href="/blogpost"> 
+          <a className="text-white bg-black rounded-md p-[7px_16px] font-bold">Back</a>
+        </Link> 
         <div className="">
           <h1>My Post: {id}</h1>
         </div>
-
-
       </div>
 
   )
