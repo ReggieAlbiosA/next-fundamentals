@@ -29,8 +29,8 @@ export default function RootLayout({
         <header className="min-h-[68px] flex items-center justify-center shadow-[0px_1px_4px_rgba(0,0,0,0.25)] sticky top-0 z-50">
           <nav>
             <ul className="flex gap-x-[20px]">
-              <li><Link href="/"></Link><a>Home</a></li>
-              <li><Link href="/blogpost"></Link><a>Blog Post</a></li>
+              <li><Link href="/"><a>Home</a></Link></li>
+              <li><Link href="/blogpost"><a>Blog Post</a></Link></li>
             </ul>
           </nav>
         </header>
