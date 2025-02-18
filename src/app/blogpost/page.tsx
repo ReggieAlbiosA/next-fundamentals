@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 const BlogPost: React.FC<{ blogTitle: string; count: number }> = ({ blogTitle, count }) => {
-    return <Link href={`/blogpost/blogpost-${count}-${blogTitle}`}><a className="w-full h-full flex justify-center items-center bg-[#f5f5f5] p-[1rem]">{`blogpost ${count}`}</a></Link>;
+    return <Link className="w-full h-full flex justify-center items-center bg-[#f5f5f5] p-[1rem]" href={`/blogpost/blogpost-${count}-${blogTitle}`}>{`blogpost ${count}`}</Link>;
 };
 
 export default function BlogPostPage() {

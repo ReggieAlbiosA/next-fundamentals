@@ -16,10 +16,8 @@ export default function CreateBlogPostLayout({
         <div className="">
             <div className="flex justify-between items-center">
                 <h1 className="text-2xl font-bold">Blog Post</h1>
-                <Link href="/create-blogpost">
-                    <a className="bg-blue-600 hover:bg-blue-700 transition-bg duration-300 rounded-md p-[2px_10px] text-white">
-                        create
-                    </a>
+                <Link href="/create-blogpost" className="bg-blue-600 hover:bg-blue-700 transition-bg duration-300 rounded-md p-[4px_16px] text-white">
+                    create
                 </Link>
             </div>
 
