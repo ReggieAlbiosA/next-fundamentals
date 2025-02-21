@@ -44,8 +44,8 @@ export default function RootLayout({
             </div>
             
             <div className="flex items-center gap-x-[25px] " id="auth-actions">
-              <Link href="/signin" className="opacity-100 hover:opacity-90" id="sign-in">Sign In</Link>
-              <Link href="/signup" className="text-[#27ae60] border-[1px] border-[#27ae60] rounded-[5px] px-[15px] py-[5px] hover:bg-[#27ae60] hover:text-white" id="sign-up">Sign Up</Link>
+              <Link href="/signin" className="opacity-100 hover:opacity-90" id="sign-in" prefetch={false} replace>Sign In</Link>
+              <Link href="/signup" className="text-[#27ae60] border-[1px] border-[#27ae60] rounded-[5px] px-[15px] py-[5px] hover:bg-[#27ae60] hover:text-white" id="sign-up" prefetch={false} replace>Sign Up</Link>
             </div>
           </div>
         </header>
