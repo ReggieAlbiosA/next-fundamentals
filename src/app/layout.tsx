@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import Image from 'next/image';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 import BrandLogo from '@/images/brand-logo.svg'
 
@@ -50,9 +51,11 @@ export default function RootLayout({
           </div>
         </header>
 
-        <main className="flex flex-col items-center justify-center pt-6">{children}</main>
+        <main className="flex flex-col items-center justify-center pt-6 min-h-[calc(100vh-68px)]">{children}</main>
       
         <Analytics />
+        <SpeedInsights />
+        
       </body>
     </html>
   );
