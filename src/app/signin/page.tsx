@@ -16,7 +16,7 @@ export default function SignIn() {
           <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded">Sign In</button>
         </form>
         <p className="mt-4 text-sm">
-          Don't have an account? <Link href="/signup" className="text-blue-500">Sign Up</Link>
+        {"Don't forget to sign in!"} <Link href="/signup" className="text-blue-500">Sign Up</Link>
         </p>
       </section>
   );
